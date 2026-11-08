@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>cros — Future Coffee & Specialty Brews</title>
+  <meta name="description" content="cros — Coffee shop modern dengan sentuhan futuristik dan biji kopi pilihan terbaik." />
+  
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%2324140E'/%3E%3Cpath d='M10 10L22 22M22 10L10 22' stroke='%23E29B63' stroke-width='2.5' stroke-linecap='round'/%3E%3Ccircle cx='16' cy='16' r='3' fill='%23FFFFFF'/%3E%3C/svg%3E" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@1,500;1,600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Cyber Marquee Banner -->
+  <div class="announcement-bar">
+    <div class="ticker-track">
+      <span>⚡ WELCOME TO CROS FUTURE COFFEE LAB</span>
+      <span>•</span>
+      <span>USE PROMO CODE <strong>CROS20</strong> FOR 20% OFF</span>
+      <span>•</span>
+      <span>ORGANIC SPECIALTY BEANS • NITRO COLD EXTRACTION</span>
+      <span>•</span>
+      <span>LOCAL PICKUP & SPEEDY DELIVERY ACTIVE</span>
+      <span>•</span>
+      <span>⚡ WELCOME TO CROS FUTURE COFFEE LAB</span>
+      <span>•</span>
+      <span>USE PROMO CODE <strong>CROS20</strong> FOR 20% OFF</span>
+    </div>
+  </div>
+
+  <!-- Header / Navbar -->
+  <header class="site-header" id="navbar">
+    <div class="header-container">
+      
+      <!-- Futuristic Brand Logo -->
+      <a href="#hero" class="brand-logo" aria-label="cros homepage">
+        <div class="logo-emblem">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.2" stroke-dasharray="3 2" class="emblem-orbit"/>
+            <path d="M11 11L29 29M29 11L11 29" stroke="var(--cros-accent)" stroke-width="2.6" stroke-linecap="round" class="emblem-cross"/>
+            <circle cx="20" cy="20" r="3.8" fill="var(--cros-accent)" class="emblem-core"/>
+            <circle cx="20" cy="20" r="1.6" fill="#FFFFFF"/>
+            <path d="M20 2V5M20 35V38M2 20H5M35 20H38" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" opacity="0.6"/>
+          </svg>
+        </div>
+        <div class="brand-naming">
+          <span class="brand-title">cros</span>
+          <span class="brand-tagline">COFFEE LAB</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="nav-menu">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#menu" class="nav-link">Menu</a>
+        <a href="#promo" class="nav-link">Special Offer</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#delivery" class="nav-link">Delivery</a>
+      </nav>
+
+      <!-- Right Header Actions -->
+      <div class="header-actions">
+        <!-- Ambient Cafe Audio Simulator -->
+        <button class="action-btn ambient-btn" id="ambientToggle" title="Cafe Sound Simulator" aria-label="Cafe sound ambience">
+          <i class="fa-solid fa-headphones"></i>
+          <span class="ambient-label">Lo-Fi</span>
+        </button>
+
+        <!-- Wishlist Button -->
+        <button class="action-btn wishlist-btn" id="wishlistToggle" title="Favorit Saya" aria-label="Wishlist">
+          <i class="fa-regular fa-heart"></i>
+          <span class="action-badge" id="wishlistCount">0</span>
+        </button>
+
+        <!-- Profile Button -->
+        <button class="action-btn user-btn" id="profileToggle" title="Cros Member" aria-label="Member Profile">
+          <i class="fa-regular fa-user"></i>
+        </button>
+
+        <!-- Shopping Basket / Cart Button -->
+        <button class="action-btn basket-btn" id="basketToggle" title="Keranjang Belanja" aria-label="Shopping Basket">
+          <i class="fa-solid fa-basket-shopping"></i>
+          <span class="action-badge basket-badge" id="cartCount">0</span>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#hero" class="mobile-nav-link">Home</a>
+      <a href="#menu" class="mobile-nav-link">Menu</a>
+      <a href="#promo" class="mobile-nav-link">Special Offer</a>
+      <a href="#about" class="mobile-nav-link">About Cros</a>
+      <a href="#delivery" class="mobile-nav-link">Delivery Status</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="hero-backdrop">
+      <img src="assets/hero_bg.png" alt="Cros Coffee Hero Background" class="hero-bg-img" />
+    </div>
+
+    <div class="hero-content-wrapper">
+      <div class="hero-floating-badge">
+        <span class="pulsing-dot"></span>
+        <span>SPECIALTY ROAST • 100% ARABICA • COLD EXTRACTION</span>
+      </div>
+
+      <div class="hero-bottom-actions">
+        <a href="#menu" class="cta-primary">
+          <span>Explore Menu</span>
+          <i class="fa-solid fa-arrow-down"></i>
+        </a>
+        <button class="cta-secondary" id="heroQuickOrder">
+          <i class="fa-solid fa-bolt"></i>
+          <span>Quick Order</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section class="menu-section" id="menu">
+    <div class="section-container">
+      
+      <!-- Menu Header -->
+      <div class="menu-header-bar">
+        <div class="menu-title-block">
+          <h2 class="menu-main-title">Menu</h2>
+          <span class="menu-script-subtitle">drinks</span>
+        </div>
+
+        <button class="my-basket-pill-btn" id="myBasketBtn">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span>my basket</span>
+          <span class="basket-pill-counter" id="basketPillCounter">0</span>
+        </button>
+      </div>
+
+      <!-- Categories Navigation Pills -->
+      <div class="categories-wrapper">
+        <div class="categories-scroll">
+          <button class="category-pill active" data-category="iced">Iced coffee</button>
+          <button class="category-pill" data-category="milk">Milk-Based Coffee</button>
+          <button class="category-pill" data-category="classic">Classic Coffee</button>
+          <button class="category-pill" data-category="specialty">Specialty Coffee</button>
+          <button class="category-pill" data-category="sweet">Sweet Coffee</button>
+          <button class="category-pill" data-category="all">All Drinks</button>
+        </div>
+      </div>
+
+      <!-- Carousel / Menu Grid Section -->
+      <div class="carousel-container">
+        <!-- Navigation Arrow Left -->
+        <button class="slider-arrow arrow-left" id="slidePrev" aria-label="Previous menu items">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <!-- The Coffee Cards Track / Grid -->
+        <div class="menu-grid" id="menuGrid">
+          <!-- Drinks loaded via JS from the exact items in the mockup -->
+        </div>
+
+        <!-- Navigation Arrow Right -->
+        <button class="slider-arrow arrow-right" id="slideNext" aria-label="Next menu items">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+
+      <!-- More Menu Button -->
+      <div class="menu-more-action">
+        <button class="more-btn" id="toggleMoreBtn">
+          <span id="moreBtnText">More</span>
+          <i class="fa-solid fa-chevron-down" id="moreBtnIcon"></i>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Featured / Promotional Section ("New drink") -->
+  <section class="promo-section" id="promo">
+    <div class="promo-container">
+      
+      <!-- Promo Details (Left) -->
+      <div class="promo-info">
+        <div class="promo-headline-wrap">
+          <span class="promo-big-new">New</span>
+          <span class="promo-script-badge">attention</span>
+        </div>
+        <h2 class="promo-drink-word">drink</h2>
+        
+        <h3 class="promo-item-name">Iced Latte</h3>
+        
+        <p class="promo-item-desc">
+          A refreshing coffee drink made with espresso, cold milk, and ice. It has a smooth, light flavor, balancing the strength of espresso with the creaminess of milk. Perfect for hot days or when you want a cool, energizing coffee without being too strong.
+        </p>
+
+        <!-- Feature Badges -->
+        <div class="promo-specs-grid">
+          <div class="spec-card">
+            <span class="spec-number">3</span>
+            <div class="spec-text">
+              <strong>Syrups</strong>
+              <small>vanilla, caramel, hazelnut</small>
+            </div>
+          </div>
+
+          <div class="spec-card">
+            <span class="spec-number">With</span>
+            <div class="spec-text">
+              <strong>Blend</strong>
+              <small>espresso + cold milk + ice</small>
+            </div>
+          </div>
+
+          <div class="spec-card sale-card">
+            <span class="spec-number">20%</span>
+            <div class="spec-text">
+              <strong>Special</strong>
+              <small>Sale Offer</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pricing & Action -->
+        <div class="promo-action-bar">
+          <div class="promo-price-block">
+            <span class="promo-current-price">Rp 32.000</span>
+            <span class="promo-old-price">Rp 40.000</span>
+          </div>
+
+          <button class="promo-order-btn" id="orderPromoBtn">
+            <i class="fa-solid fa-plus"></i>
+            <span>Order Iced Latte Deal</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Promo Graphic (Right) -->
+      <div class="promo-visual">
+        <div class="promo-image-halo"></div>
+        <img src="assets/promo_iced_latte.png" alt="Cros New Iced Latte with Coconut" class="promo-coffee-img" />
+        <div class="floating-promo-tag">
+          <i class="fa-solid fa-fire-flame-curved"></i>
+          <span>Chef's Choice</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Futuristic Philosophy / Features Section -->
+  <section class="about-section" id="about">
+    <div class="section-container">
+      <div class="about-grid">
+        
+        <div class="about-text-col">
+          <span class="sub-label">THE CROS DIFFERENCE</span>
+          <h2 class="about-heading">Kopi Masa Depan dengan Presisi Laboratorium.</h2>
+          <p class="about-desc">
+            Di <strong>cros</strong>, kami memadukan seni roasting tradisional dengan teknologi ekstraksi terkini. Setiap cangkir dikalibrasi secara presisi untuk mengeluarkan aroma murni, keasaman lembut, dan rasa manis alami tanpa rasa pahit berlebih.
+          </p>
+
+          <div class="feature-bullets">
+            <div class="feature-item">
+              <div class="feature-icon"><i class="fa-solid fa-atom"></i></div>
+              <div>
+                <h4>Ultrasonic Extraction</h4>
+                <p>Ekstraksi gelombang halus yang melepaskan spektrum rasa kopi terdalam.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon"><i class="fa-solid fa-snowflake"></i></div>
+              <div>
+                <h4>Nitro Micro-Chill</h4>
+                <p>Es kristal ultra-murni yang tidak mengubah rasa kopi saat dinikmati hingga tegukan terakhir.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon"><i class="fa-solid fa-leaf"></i></div>
+              <div>
+                <h4>100% Sustainable Farm</h4>
+                <p>Biji kopi arabika pilihan dari petani lokal berstandar fair-trade internasional.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-stats-col">
+          <div class="stat-box">
+            <span class="stat-number">98.6°C</span>
+            <span class="stat-label">Optimal Brewing Heat</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number">18 Bar</span>
+            <span class="stat-label">High-Tech Extraction</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number">8 Min</span>
+            <span class="stat-label">Average Delivery Ready</span>
+          </div>
+          <div class="stat-box highlight-box">
+            <span class="stat-number">4.9 ★</span>
+            <span class="stat-label">From 10,000+ Coffee Lovers</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Delivery & Store Status Section -->
+  <section class="delivery-section" id="delivery">
+    <div class="section-container">
+      <div class="delivery-card">
+        <div class="delivery-content">
+          <span class="delivery-badge"><i class="fa-solid fa-location-dot"></i> LOCAL DELIVERY READY</span>
+          <h3>Ingin Kopi Cros Tiba di Lokasi Anda?</h3>
+          <p>Layanan pesan-antar lokal cepat dengan kemasan kedap suhu khusus agar es tidak mudah cair dan aroma kopi tetap segar.</p>
+          <div class="delivery-search-box">
+            <input type="text" placeholder="Masukkan alamat pengiriman lokal Anda..." id="deliveryInput" />
+            <button class="delivery-check-btn" id="deliveryCheckBtn">Cek Radius Delivery</button>
+          </div>
+          <div id="deliveryResult" class="delivery-result-msg"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="section-container">
+      <div class="footer-grid">
+        
+        <!-- Brand Info -->
+        <div class="footer-col brand-col">
+          <div class="footer-logo">
+            <div class="logo-emblem">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.2" stroke-dasharray="3 2"/>
+                <path d="M11 11L29 29M29 11L11 29" stroke="var(--cros-accent)" stroke-width="2.6" stroke-linecap="round"/>
+                <circle cx="20" cy="20" r="3.8" fill="var(--cros-accent)"/>
+              </svg>
+            </div>
+            <span class="brand-title">cros</span>
+          </div>
+          <p class="footer-bio">
+            cros Coffee Lab menghadirkan seduhan kopi berstandar masa depan dengan estetika minimalis dan rasa otentik.
+          </p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+
+        <!-- Links -->
+        <div class="footer-col">
+          <h4>Menu Cros</h4>
+          <ul>
+            <li><a href="#menu" data-cat-filter="iced">Iced Coffee</a></li>
+            <li><a href="#menu" data-cat-filter="milk">Milk-Based Coffee</a></li>
+            <li><a href="#menu" data-cat-filter="classic">Classic Roasts</a></li>
+            <li><a href="#menu" data-cat-filter="specialty">Specialty Blends</a></li>
+          </ul>
+        </div>
+
+        <!-- Operation Hours -->
+        <div class="footer-col">
+          <h4>Jam Operasional</h4>
+          <p><strong>Senin - Jumat:</strong> 07:00 — 22:00 WIB</p>
+          <p><strong>Sabtu - Minggu:</strong> 08:00 — 23:00 WIB</p>
+          <p class="status-online"><i class="fa-solid fa-circle"></i> Local Hub Buka Sekarang</p>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-col">
+          <h4>VIP Member</h4>
+          <p>Dapatkan diskon rahasia dan akses rasa kopi musiman pertama kali.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" placeholder="Email Anda..." required />
+            <button type="submit" aria-label="Submit newsletter"><i class="fa-solid fa-paper-plane"></i></button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 cros coffee shop. All rights reserved. Designed for dummy local experience.</p>
+        <div class="footer-badge">
+          <span>SYSTEM VERSION: CROS-2.0.26</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Slide-out Shopping Basket Drawer -->
+  <div class="basket-drawer-overlay" id="basketOverlay"></div>
+  <aside class="basket-drawer" id="basketDrawer" aria-label="Shopping Basket">
+    <div class="drawer-header">
+      <div class="drawer-title">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <h3>my basket (<span id="drawerItemCount">0</span>)</h3>
+      </div>
+      <button class="drawer-close-btn" id="closeBasketBtn" aria-label="Tutup keranjang">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <!-- Basket Items List -->
+    <div class="drawer-body" id="drawerBody">
+      <!-- Items dynamically injected -->
+      <div class="empty-basket-state" id="emptyBasket">
+        <i class="fa-solid fa-mug-hot empty-icon"></i>
+        <p>Keranjang belanja Anda masih kosong</p>
+        <a href="#menu" class="empty-cta" id="startOrderingBtn">Pilih Minuman Sekarang</a>
+      </div>
+      <div class="cart-items-list" id="cartItemsList"></div>
+    </div>
+
+    <!-- Basket Footer with Calculations -->
+    <div class="drawer-footer" id="drawerFooter">
+      <div class="promo-input-row">
+        <input type="text" placeholder="Kode Promo (cth: CROS20)" id="couponInput" />
+        <button id="applyCouponBtn">Apply</button>
+      </div>
+      <div id="couponStatus" class="coupon-msg"></div>
+
+      <div class="calc-table">
+        <div class="calc-row">
+          <span>Subtotal</span>
+          <span id="subtotalVal">Rp 0</span>
+        </div>
+        <div class="calc-row discount-row" id="discountRow" style="display: none;">
+          <span>Diskon Promo (20%)</span>
+          <span id="discountVal">-Rp 0</span>
+        </div>
+        <div class="calc-row">
+          <span>Pajak Restoran PB1 (10%)</span>
+          <span id="taxVal">Rp 0</span>
+        </div>
+        <div class="calc-row total-row">
+          <span>Total Pembayaran</span>
+          <span id="totalVal">Rp 0</span>
+        </div>
+      </div>
+
+      <button class="checkout-submit-btn" id="checkoutBtn">
+        <span>Lanjut ke Checkout</span>
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </div>
+  </aside>
+
+  <!-- Drink Customizer Modal -->
+  <div class="modal-overlay" id="customizerModal">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="closeCustomizerBtn"><i class="fa-solid fa-xmark"></i></button>
+      
+      <div class="modal-drink-preview">
+        <img src="" alt="" id="modalDrinkImg" />
+        <div class="modal-drink-info">
+          <h3 id="modalDrinkTitle">Latte</h3>
+          <p id="modalDrinkDesc">espresso + lots of milk + little foam</p>
+          <div class="modal-price" id="modalDrinkPrice">Rp 30.000</div>
+        </div>
+      </div>
+
+      <div class="modal-options">
+        <!-- Size Option -->
+        <div class="option-group">
+          <label class="option-label">Ukuran Cup</label>
+          <div class="chips-selector" id="sizeSelector">
+            <button class="chip active" data-name="size" data-val="Regular" data-add="0">Regular (12oz)</button>
+            <button class="chip" data-name="size" data-val="Large" data-add="5000">Large (16oz) +Rp 5.000</button>
+          </div>
+        </div>
+
+        <!-- Ice Level -->
+        <div class="option-group">
+          <label class="option-label">Level Es (Ice)</label>
+          <div class="chips-selector" id="iceSelector">
+            <button class="chip active" data-name="ice" data-val="Normal Ice">Normal Ice</button>
+            <button class="chip" data-name="ice" data-val="Less Ice">Less Ice</button>
+            <button class="chip" data-name="ice" data-val="No Ice">No Ice</button>
+            <button class="chip" data-name="ice" data-val="Hot">Hot Serving</button>
+          </div>
+        </div>
+
+        <!-- Sweetness -->
+        <div class="option-group">
+          <label class="option-label">Gula / Manis</label>
+          <div class="chips-selector" id="sugarSelector">
+            <button class="chip active" data-name="sugar" data-val="Normal 100%">100% (Standard)</button>
+            <button class="chip" data-name="sugar" data-val="Less 50%">50% (Less Sugar)</button>
+            <button class="chip" data-name="sugar" data-val="Zero 0%">0% (No Sugar)</button>
+          </div>
+        </div>
+
+        <!-- Milk / Extra Add-on -->
+        <div class="option-group">
+          <label class="option-label">Pilihan Susu & Tambahan</label>
+          <div class="chips-selector" id="milkSelector">
+            <button class="chip active" data-name="milk" data-val="Dairy Milk" data-add="0">Fresh Dairy Milk</button>
+            <button class="chip" data-name="milk" data-val="Oat Milk" data-add="6000">Oat Milk +Rp 6.000</button>
+            <button class="chip" data-name="milk" data-val="Almond Milk" data-add="6000">Almond Milk +Rp 6.000</button>
+            <button class="chip" data-name="milk" data-val="Extra Espresso Shot" data-add="7000">Extra Shot +Rp 7.000</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-action-footer">
+        <div class="qty-stepper">
+          <button class="qty-btn" id="modalQtyMinus">-</button>
+          <span class="qty-display" id="modalQtyDisplay">1</span>
+          <button class="qty-btn" id="modalQtyPlus">+</button>
+        </div>
+
+        <button class="modal-add-cart-btn" id="modalAddToCartBtn">
+          <span>Tambah ke Keranjang • </span>
+          <span id="modalFinalPrice">Rp 30.000</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Checkout Order Simulator Modal -->
+  <div class="modal-overlay" id="checkoutSuccessModal">
+    <div class="modal-card checkout-card">
+      <div class="checkout-success-icon">
+        <i class="fa-solid fa-circle-check"></i>
+      </div>
+      <h2>Pesanan Berhasil Dibuat!</h2>
+      <p class="order-id-label">Kode Pesanan: <strong id="generatedOrderId">#CROS-8821</strong></p>
+      
+      <div class="order-summary-box">
+        <div class="summary-item">
+          <span>Status:</span>
+          <span class="badge-status">Sedang Disiapkan Barista cros</span>
+        </div>
+        <div class="summary-item">
+          <span>Estimasi Selesai:</span>
+          <span>~8 Menit</span>
+        </div>
+        <div class="summary-item">
+          <span>Tipe Layanan:</span>
+          <span id="orderServiceType">Local Pickup / Dine-in</span>
+        </div>
+        <div class="summary-item total-item">
+          <span>Total Bayar:</span>
+          <strong id="orderFinalAmount">Rp 0</strong>
+        </div>
+      </div>
+
+      <p class="checkout-note">
+        Ini adalah simulasi dummy website lokal untuk kedai kopi <strong>cros</strong>. Terima kasih sudah mencoba!
+      </p>
+
+      <button class="checkout-done-btn" id="closeCheckoutSuccessBtn">Selesai & Pesan Lagi</button>
+    </div>
+  </div>
+
+  <!-- Member / Profile Modal -->
+  <div class="modal-overlay" id="profileModal">
+    <div class="modal-card profile-card">
+      <button class="modal-close-btn" id="closeProfileBtn"><i class="fa-solid fa-xmark"></i></button>
+      <div class="profile-header">
+        <div class="avatar-circle">
+          <i class="fa-solid fa-user-astronaut"></i>
+        </div>
+        <h3>cros Club Member</h3>
+        <span class="member-tier">VIP Black Tier</span>
+      </div>
+      
+      <div class="points-card">
+        <div class="points-info">
+          <span>Poin Kopi cros</span>
+          <h2>450 PTS</h2>
+        </div>
+        <div class="points-progress">
+          <div class="progress-bar" style="width: 75%;"></div>
+          <small>50 poin lagi untuk Gratis 1 Iced Latte</small>
+        </div>
+      </div>
+
+      <div class="voucher-list">
+        <h4>Voucher Aktif Anda</h4>
+        <div class="voucher-item">
+          <i class="fa-solid fa-ticket"></i>
+          <div>
+            <strong>DISKON 20% SEMUA MENU</strong>
+            <small>Kode: CROS20 • Berlaku hari ini</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>

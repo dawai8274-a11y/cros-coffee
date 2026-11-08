@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 50" width="220" height="50">
+  <defs>
+    <linearGradient id="crosAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E29B63" />
+      <stop offset="100%" stop-color="#B56A2D" />
+    </linearGradient>
+  </defs>
+
+  <!-- Futuristic Minimalist Cross & Bean Emblem -->
+  <g transform="translate(8, 5)">
+    <!-- Tech boundary box with chamfered / cut corners -->
+    <rect x="0" y="0" width="40" height="40" rx="10" fill="none" stroke="url(#crosAccent)" stroke-width="1.5" opacity="0.4" />
+    
+    <!-- Stylized Futuristic X/Cross -->
+    <path d="M13 13 L27 27 M27 13 L13 27" stroke="url(#crosAccent)" stroke-width="3.5" stroke-linecap="round" />
+    
+    <!-- Center floating coffee nexus dot -->
+    <circle cx="20" cy="20" r="2.5" fill="#FFF" stroke="#B56A2D" stroke-width="1"/>
+
+    <!-- Minimalist quadrant markers -->
+    <circle cx="20" cy="7" r="1" fill="#E29B63"/>
+    <circle cx="20" cy="33" r="1" fill="#E29B63"/>
+    <circle cx="7" cy="20" r="1" fill="#E29B63"/>
+    <circle cx="33" cy="20" r="1" fill="#E29B63"/>
+  </g>
+
+  <!-- Typography: 'cros' in sleek futuristic geometry -->
+  <!-- 'c' -->
+  <path d="M68 18 C61 18, 56 23, 56 30 C56 37, 61 42, 68 42 C72.5 42, 76 39.5, 78 36 L74.5 33.5 C73.2 35.5, 70.8 37, 68 37 C63.8 37, 60.5 33.8, 60.5 30 C60.5 26.2, 63.8 23, 68 23 C70.8 23, 73.2 24.5, 74.5 26.5 L78 24 C76 20.5, 72.5 18, 68 18 Z" fill="#1A120B"/>
+
+  <!-- 'r' -->
+  <path d="M84 19 L88.5 19 L88.5 23.5 C89.8 20, 93.5 18.2, 97.5 18.5 L97.5 23.8 C93 23.5, 89 26.5, 89 31.5 L89 41.5 L84 41.5 Z" fill="#1A120B"/>
+
+  <!-- 'o' with futuristic orbit slit -->
+  <path d="M112 18 C104 18, 98 23.5, 98 30 C98 36.5, 104 42, 112 42 C120 42, 126 36.5, 126 30 C126 23.5, 120 18, 112 18 Z M112 23 C116.8 23, 121 26.2, 121 30 C121 33.8, 116.8 37, 112 37 C107.2 37, 103 33.8, 103 30 C103 26.2, 107.2 23, 112 23 Z" fill="#1A120B"/>
+  <circle cx="112" cy="30" r="2" fill="url(#crosAccent)"/>
+
+  <!-- 's' -->
+  <path d="M140 22 C138 19.5, 134.5 18, 131 18 C126 18, 122.5 20.5, 122.5 24 C122.5 29, 139 27, 139 36 C139 39.5, 135.5 42, 130.5 42 C126 42, 122 39.5, 120 36.5 L123.5 33.5 C125 35.8, 127.8 37.2, 130.5 37.2 C133.5 37.2, 134.5 35.5, 134.5 34 C134.5 29.5, 118 27.5, 118 24 C118 19, 123.5 18, 131 18 C135 18, 139 19.5, 141.5 22.5 Z" fill="#1A120B"/>
+
+  <!-- Futuristic subline -->
+  <text x="150" y="26" font-family="'Space Grotesk', -apple-system, sans-serif" font-size="6.5" font-weight="700" letter-spacing="2" fill="url(#crosAccent)">LAB</text>
+  <text x="150" y="37" font-family="'Space Grotesk', -apple-system, sans-serif" font-size="5" font-weight="600" letter-spacing="1.5" fill="#8B5E3C">SYS.26</text>
+</svg>

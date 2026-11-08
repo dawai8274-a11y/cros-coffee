@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 70" width="240" height="70">
+  <defs>
+    <linearGradient id="crosGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E6AF73" />
+      <stop offset="50%" stop-color="#BC6C25" />
+      <stop offset="100%" stop-color="#653E1B" />
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#DDA15E" />
+      <stop offset="100%" stop-color="#F4A261" />
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#BC6C25" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Futuristic Emblem: Precision Cross + Geometric Bean Flare -->
+  <g transform="translate(10, 10)">
+    <!-- Outer radar/aperture accent -->
+    <circle cx="25" cy="25" r="23" fill="none" stroke="#BC6C25" stroke-width="1.5" opacity="0.35" stroke-dasharray="4 3"/>
+    <circle cx="25" cy="25" r="24.5" fill="none" stroke="#BC6C25" stroke-width="1" opacity="0.15"/>
+    
+    <!-- Precision Crosshair ticks -->
+    <path d="M25 0 L25 5 M25 45 L25 50 M0 25 L5 25 M45 25 L50 25" stroke="#BC6C25" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Futuristic 4-fold geometric cross & bean petals -->
+    <!-- Top & bottom vertical beans / angled blades -->
+    <path d="M25 7 C21 16, 21 21, 25 25 C29 21, 29 16, 25 7 Z" fill="url(#crosGrad)"/>
+    <path d="M25 43 C21 34, 21 29, 25 25 C29 29, 29 34, 25 43 Z" fill="url(#crosGrad)"/>
+    <path d="M7 25 C16 21, 21 21, 25 25 C21 29, 16 29, 7 25 Z" fill="url(#crosGrad)"/>
+    <path d="M43 25 C34 21, 29 21, 25 25 C29 29, 34 29, 43 25 Z" fill="url(#crosGrad)"/>
+
+    <!-- Diagonal precision micro-dots -->
+    <circle cx="14" cy="14" r="1.5" fill="#DDA15E"/>
+    <circle cx="36" cy="14" r="1.5" fill="#DDA15E"/>
+    <circle cx="14" cy="36" r="1.5" fill="#DDA15E"/>
+    <circle cx="36" cy="36" r="1.5" fill="#DDA15E"/>
+
+    <!-- Center core glowing coffee bead -->
+    <circle cx="25" cy="25" r="5" fill="#24140E"/>
+    <circle cx="25" cy="25" r="2.5" fill="#E6AF73"/>
+  </g>
+
+  <!-- Typography: 'cros' custom geometric vector paths for 100% reliable rendering -->
+  <g fill="#24140E" transform="translate(72, 16)">
+    <!-- 'c' -->
+    <path d="M28 8 C16 8, 8 16, 8 26 C8 36, 16 44, 28 44 C34 44, 38 42, 41 38 L36 34 C34 37, 31 38.5, 28 38.5 C20 38.5, 14 33, 14 26 C14 19, 20 13.5, 28 13.5 C31 13.5, 34 15, 36 18 L41 14 C38 10, 34 8, 28 8 Z"/>
+
+    <!-- 'r' -->
+    <path d="M49 9 L55 9 L55 16 C57 11, 62 8, 68 8 L68 14.5 C61 14.5, 55 18, 55 26 L55 43 L49 43 Z"/>
+
+    <!-- 'o' with futuristic inner core cut -->
+    <path d="M88 8 C75 8, 65 17, 65 26 C65 35, 75 44, 88 44 C101 44, 111 35, 111 26 C111 17, 101 8, 88 8 Z M88 14 C97 14, 104 19.5, 104 26 C104 32.5, 97 38, 88 38 C79 38, 72 32.5, 72 26 C72 19.5, 79 14, 88 14 Z"/>
+    <!-- futuristic orbit dot in 'o' -->
+    <circle cx="88" cy="26" r="2.5" fill="#BC6C25"/>
+
+    <!-- 's' -->
+    <path d="M131 13 C127 9, 122 8, 117 8 C109 8, 104 12, 104 17 C104 26, 131 22, 131 32 C131 36, 126 39, 120 39 C114 39, 109 36, 106 32 L101 36 C105 41, 112 44, 120 44 C130 44, 137 39, 137 32 C137 22, 110 26, 110 17 C110 14, 113 13, 117 13 C121 13, 125 15, 127 17 Z"/>
+  </g>
+
+  <!-- Tagline: 'COFFEE' -->
+  <text x="75" y="63" font-family="'Courier New', monospace, sans-serif" font-size="8" font-weight="bold" letter-spacing="6" fill="#BC6C25">COFFEE</text>
+  <line x1="136" y1="60" x2="210" y2="60" stroke="#BC6C25" stroke-width="1" opacity="0.4"/>
+</svg>
